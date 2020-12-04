@@ -5,6 +5,7 @@ Text Color (Dark Gray): #357b70;
 Primary Color (Pink): #f44b95;
 Secondary Color (Green): #3bae35;
  */
+ 
  :root {
    --primary-color: #357b70;
    --secondary-color: #e0b354;
@@ -13,6 +14,7 @@ Secondary Color (Green): #3bae35;
    --color-visited: #f44b95;
    --color-active: #3bae35;
  }
+
 
 body {
   font-family: 'Lobster', sans-serif;
