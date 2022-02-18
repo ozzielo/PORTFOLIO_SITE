@@ -7,25 +7,52 @@ Secondary Color (Green): #3bae35;
  */
  
  :root {
-   --primary-color: #357b70;
+   --primary-color: #686868;
    --secondary-color: #e0b354;
-   --dark-grey: #2b2b2b;
+   --dark-grey: #1a1a1a;
+   --med-grey: #2e2e2e;
    --heading-font-weight: 700;
    --color-visited: #f44b95;
    --color-active: #3bae35;
+   --font-accent: #6CE4FE;
+   --background-light: #ffd800;
+   --white: #ffffff;
+   --light-grey: rgb(145, 145, 145);
+
+
+
+   --gap: 8px;
+  --gap0-5: calc(var(--gap)*0.5);
+  --gap1-5: calc(var(--gap)*1.5);
+  --gap2: calc(var(--gap)*2);
+  --gap3: calc(var(--gap)*3);
+  --gap4: calc(var(--gap)*4);
+  --gap5: calc(var(--gap)*5);
+  --gap6: calc(var(--gap)*6);
+  --gap7: calc(var(--gap)*7);
+  --gap8: calc(var(--gap)*8);
+
+
+  --border-radius: 3px;
  }
 
 
 body {
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  background-color: rgb(24, 24, 24);
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 60px;
   font-weight: var(--heading-font-weight);
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: var(--white);
 }
 
 h2 {
@@ -34,21 +61,38 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: var(--heading-font-weight);
+  color: var(--white);
+}
+
+.contact{
+  font-size: 18px;
+  color: var(--white);
+  margin: 20px;
+  /* padding-bottom: 100px; */
+
+}
+
+.contact-div{
+  display: flex;
+  justify-content: center;
+  
 }
 
 a {
-  color: var(--dark-grey);
+  color: var(--white);
+  text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
   color: var(--color-visited);
-}
+} */
 
 a:hover, a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
+  color: var(--light-grey);
 }
 a:active {
   color: var(--color-active);
@@ -63,7 +107,7 @@ button {
   color: white;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
+  padding: 0px;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -96,6 +140,7 @@ button:hover, button:focus {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  padding-top: 100px;
 }
 * {
   box-sizing: border-box;
@@ -104,10 +149,15 @@ button:hover, button:focus {
   display: flex;
   width: 100%;
   padding: 20px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  background-color: rgb(24, 24, 24);
+
 
 }
 .page-header__item {
   flex: 0 1 200px;
+  
 }
 .page-header__item:last-child {
   flex-grow: 1;
@@ -211,3 +261,150 @@ button:focus,
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+.blueline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.projects {
+  max-width: 700px;
+  margin: 0 auto;
+
+  
+}
+
+.dev-project {
+  flex-shrink: 0;
+  display: flex;
+  width: 45%;
+  height: auto;
+  
+ 
+}
+
+.alt-dev-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap5);
+  overflow-x: auto;
+  padding-top: 1rem;
+  justify-content: center;
+  padding-bottom: var(--gap5);
+  border-bottom: 1px solid var(--font-dark);
+  margin-top: var(--gap5);
+}
+
+.alt-dev-projects .dev-project {
+  /* width: 40%; */
+  height: auto;
+  background-color: var(--med-grey);
+  padding: var(--gap2);
+  border-radius: 5px;
+  /* margin-left: 40px; */
+  display: flex;
+
+  
+}
+
+.name {
+  animation-name: swipe-left;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+strong {
+  color: var(--light-grey);
+  font-size: 22px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+}
+
+p {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: var(--white);
+}
+
+.subtitle{
+  color: var(--light-grey);
+}
+
+.dev-projects-title{
+  color: var(--white);
+}
+
+.about{
+  color: var(--white);
+}
+
+.about-div{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  width: 80%;
+  
+}
+
+.profile-bio{
+  color: var(--light-grey);
+}
+
+.pro-div{
+  display: flex;
+}
+
+.center {
+  text-align: center;
+}
+
+.tools{
+  display: flex;
+  color: var(--light-grey);
+}
+
+.con{
+  padding-top: 15px;
+}
+
+.skills-tools li,
+.dev-project .dev-technologies li {
+display: inline;
+white-space: nowrap;
+}
+
+.skills-tools  li:not(:last-child):after,
+.dev-project .dev-technologies li:not(:last-child):after {
+  white-space: nowrap;
+  content: ' •';
+  }
+
+.skills-tools {
+  padding-left: 0;
+}
+
+.dev-technologies{
+  color: var(--light-grey);
+}
+
+.dev-img{
+  width: 100%;
+}
+
+.chat-div{
+height:25px;
+
+}
+
+/* .dev-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap7);
+  overflow-x: auto;
+  padding-top: 1rem;
+} */
+
