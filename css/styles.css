@@ -176,6 +176,7 @@ button:hover, button:focus {
 }
 .navigation-list {
   list-style-type: none;
+  
 }
 .navigation-list li {
   display: inline-block;
@@ -323,7 +324,7 @@ margin: 10px;
   display: flex;
   /* margin-top: var(--gap5); */
   /* margin: 20px; */
-  min-height:630px;
+  min-height:625px;
 
 
   
@@ -441,7 +442,7 @@ height:25px;
 
 .navbar {
    border: none!important;
-   
+   background-color: rgb(24, 24, 24);
    }
 
    .bg-dark{
@@ -455,3 +456,14 @@ height:25px;
 .footing{
   padding-bottom: 50px;
 }
+
+.nav{
+  padding: 10px;
+  background-color: rgb(24, 24, 24);
+}
+
+.navbar-toggler{
+  color: #ffffff;
+}
+
+
