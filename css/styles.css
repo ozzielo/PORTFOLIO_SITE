@@ -142,7 +142,7 @@ button:hover, button:focus {
   /* max-width: 700px; */
   margin: 0 auto;
   padding-top: 100px;
-  width: 66%;
+  width: 75%;
   justify-content: center;
 }
 * {
@@ -281,7 +281,7 @@ button:focus,
 .projects {
   /* max-width: 700px; */
   margin: 0 auto;
-  width: 66%;
+  width: 75%;
   
 
   
@@ -363,7 +363,7 @@ p {
 }
 
 .about-div{
-  width: 66%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -389,7 +389,7 @@ p {
 .tools{
   /* display: flex; */
   color: var(--light-grey);
-  width: 66%;
+  width: 90%;
 }
 
 .con{
@@ -424,6 +424,7 @@ white-space: nowrap;
 height:25px;
 
 }
+
 
 /* .dev-projects {
   display: flex;
