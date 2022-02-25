@@ -138,9 +138,12 @@ button:hover, button:focus {
   text-align: center;
 }
 .profile {
-  max-width: 700px;
+  /* display: flex; */
+  /* max-width: 700px; */
   margin: 0 auto;
   padding-top: 100px;
+  width: 66%;
+  justify-content: center;
 }
 * {
   box-sizing: border-box;
@@ -151,9 +154,17 @@ button:hover, button:focus {
   padding: 20px;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  background-color: rgb(24, 24, 24);
+  /* background-color: rgb(24, 24, 24); */
+  margin: 0 auto;
+  margin-bottom: 0;
+  border: none;
 
+  /* background-color: #a12323; */
 
+}
+
+.header{
+  background-color: #1a1a1a;
 }
 .page-header__item {
   flex: 0 1 200px;
@@ -268,8 +279,10 @@ button:focus,
 }
 
 .projects {
-  max-width: 700px;
+  /* max-width: 700px; */
   margin: 0 auto;
+  width: 66%;
+  
 
   
 }
@@ -277,16 +290,19 @@ button:focus,
 .dev-project {
   flex-shrink: 0;
   display: flex;
-  width: 45%;
+   /* width: 45%; */
   height: auto;
+  justify-content: center;
+margin: 10px;
+ 
   
  
 }
 
 .alt-dev-projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap5);
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* gap: var(--gap5); */
   overflow-x: auto;
   padding-top: 1rem;
   justify-content: center;
@@ -296,13 +312,19 @@ button:focus,
 }
 
 .alt-dev-projects .dev-project {
-  /* width: 40%; */
+  /* flex-wrap: wrap; */
+  /* width: 90%; */
   height: auto;
   background-color: var(--med-grey);
   padding: var(--gap2);
   border-radius: 5px;
+  justify-content: center;
   /* margin-left: 40px; */
   display: flex;
+  /* margin-top: var(--gap5); */
+  /* margin: 20px; */
+  min-height:630px;
+
 
   
 }
@@ -341,17 +363,19 @@ p {
 }
 
 .about-div{
-  max-width: 700px;
+  width: 66%;
   margin: 0 auto;
 }
 
 .profile-pic {
-  width: 80%;
+  width: 100%;
+  margin: 0px;
   
 }
 
 .profile-bio{
   color: var(--light-grey);
+  
 }
 
 .pro-div{
@@ -363,8 +387,9 @@ p {
 }
 
 .tools{
-  display: flex;
+  /* display: flex; */
   color: var(--light-grey);
+  width: 66%;
 }
 
 .con{
@@ -408,3 +433,24 @@ height:25px;
   padding-top: 1rem;
 } */
 
+/* .container{
+  margin-top: 0;
+} */
+
+
+.navbar {
+   border: none!important;
+   
+   }
+
+   .bg-dark{
+    background-color: rgb(24, 24, 24);
+   }
+
+/* .bio{
+  padding-top: 20px;
+} */
+
+.footing{
+  padding-bottom: 50px;
+}

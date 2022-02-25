@@ -4,6 +4,10 @@
 <head>
   <title>Oscar Lomax Portfolio</title>
   <link rel="shortcut icon" href="http://wikipedia.com/static/favicon/wikipedia.ico">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -12,14 +16,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-  <header class="page-header">
-    <a href="index.html">
+<body container-fluid>
+  <!-- <header class="page-header"> -->
+  <!-- <a href="index.html">
       <img src="img/OSCAR_LOGO.png" width="112" height="46" alt="placeholder logo" class="page-header__item">
-    </a>
+    </a> -->
 
-    <nav class="main-navigation page-header__item">
+  <nav class="navbar-fixed-top navbar-expand-lg bg-dark ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div>
       <ul role="menubar" class="navigation-list">
+        <li role="presentation"></li>
+        <a class="navbar-brand" href="index.html">
+          <img src="img/OSCAR_LOGO.png" width="112" height="46" alt="placeholder logo" class="page-header__item">
+        </a>
+        </li>
         <li role="presentation">
           <a href="#projects" role="menuitem" class="navigation-list__item">WORK</a>
         </li>
@@ -30,10 +44,15 @@
           <a href="#contact" role="menuitem" class="navigation-list__item">CONTACT</a>
         </li>
       </ul>
-    </nav>
-  </header>
-  <div class="profile">
-    <div class="blueline">
+    </div>
+
+  </nav>
+  <!-- </header> -->
+  <div class="blueline profile row">
+    <div class="col-xs-5 col-sm-3 col-md-3 col-lg-3">
+      <img src="img/avi.png" alt="profile" class="profile-pic">
+    </div>
+    <div class="bio col-xs-7 col-sm-9 col-md-9 col-lg-9">
       <!-- <img src="img/avi.png" class="profile__portrait" alt="photo of me"> -->
       <p><strong>Hi, my name is</strong>
       <div>
@@ -48,8 +67,9 @@
       <h2 class="section" id="projects">Development Projects</h2>
     </div>
 
-    <div class="alt-dev-projects row">
-      <div class="dev-project column col-md-6 col-lg-6">
+    <div class="alt-dev-projects">
+
+      <div class="dev-project column col-md-5 col-lg-5">
         <div class="dev-description">
           <img class="dev-img" src="./img/poke-ss.png" alt="">
           <h3>Pokemons Info</h3>
@@ -85,7 +105,8 @@
           </div>
         </div>
       </div>
-      <div class="dev-project column col-md-6 col-lg-6">
+      <div class="col-lg-1 col-md-1"></div>
+      <div class="dev-project column col-md-5 col-lg-5">
         <div class="dev-description">
           <img class="dev-img" src="./img/api-ss.png" alt="">
           <h3>Movies API</h3>
@@ -111,7 +132,7 @@
         </div>
       </div>
 
-      <div class="dev-project column col-md-6 col-lg-6">
+      <div class="dev-project column col-md-5 col-lg-5">
         <div class="dev-description">
           <img class="dev-img" src="./img/mov-ang.png" alt="">
           <h3>Movies API - Angular Client Side</h3>
@@ -145,8 +166,9 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-1 col-md-1"></div>
 
-      <div class="dev-project column col-md-6 col-lg-6">
+      <div class="dev-project column col-md-5 col-lg-5">
         <div class="dev-description">
           <img class="dev-img" src="./img/mov-react.png" alt="">
           <h3>Movies API - React Client Side</h3>
@@ -173,7 +195,7 @@
         </div>
       </div>
 
-      <div class="dev-project column col-md-6 col-lg-6">
+      <div class="dev-project column col-md-5 col-lg-5">
         <div class="dev-description">
           <img class="dev-img" src="./img/event-ss.png" alt="">
           <h3>Meet App</h3>
@@ -211,8 +233,9 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-1 col-md-1"></div>
 
-      <div class="dev-project column col-md-6 col-lg-6">
+      <div class="dev-project column  col-md-5 col-lg-5">
         <div class="dev-description">
           <img class="dev-img" src="./img/chat.png" alt="">
           <h3>Chattopia</h3>
@@ -258,25 +281,25 @@
     </div>
     <div>
       <div class="pro-div row">
-        <div class="column col-md-5 col-lg-4">
+        <!-- <div class="column col-md-5 col-lg-4">
           <img src="img/avi.png" alt="profile" class="profile-pic">
-        </div>
-        <div class="column col-md-7 col-lg-8" id="my-story">
+        </div> -->
+        <div class="" id="my-story">
           <p class="profile-bio">I am a Maryland based Software Engineer with a Digital Art & Design background.
-            I find joy in a problem-solving and I am always looking forward to adding
+            I find joy in problem-solving and I am always looking forward to adding
             a new skill to my repertoire. I work with HTML | CSS/SCSS | JavaScript | Node | Express | React |
             React Native |
             Angular | MongoDB and many more.
           </p>
         </div><!-- my story column -->
       </div>
-      <div class="center con">
-        <a href="mailto:ozzylomax@gmail.com" class="button contact" rel="noopener">Email</a>
+      <!-- <div class="center con"> -->
+      <!-- <a href="mailto:ozzylomax@gmail.com" class="button contact" rel="noopener">Email</a>
         <a href="https://www.linkedin.com/in/oscar-lomax/" class="button contact" target="_blank"
-          rel="noopener">LinkedIn</a>
-        <!-- <a href="img/avi.png" class="button contact" target="_blank" rel="noopener">Resume</a> -->
-        <a href="https://github.com/ozzielo" class="button contact" target="_blank" rel="noopener">GitHub</a>
-      </div>
+          rel="noopener">LinkedIn</a> -->
+      <!-- <a href="img/avi.png" class="button contact" target="_blank" rel="noopener">Resume</a> -->
+      <!-- <a href="https://github.com/ozzielo" class="button contact" target="_blank" rel="noopener">GitHub</a> -->
+      <!-- </div> -->
 
       <div class="container">
         <div class="row tools">
@@ -343,7 +366,7 @@
     <button class="button__secondary">Secondary Button</button>
   </div> -->
   <footer class="center">
-    <div class="container">
+    <div class="container footing">
       <p class="light contact" id="contact">Contact Me
       <p>
       <div class="contact-div">
@@ -355,6 +378,7 @@
         <a href="https://www.linkedin.com/in/oscar-lomax/" class="button contact" target="_blank">LinkedIn</a>
         <!-- </li> -->
         <!-- </ul> -->
+        <a href="https://github.com/ozzielo" class="button contact" target="_blank" rel="noopener">GitHub</a>
       </div>
       <div class="email">
         <p>ozzylomax@gmail.com</p>
