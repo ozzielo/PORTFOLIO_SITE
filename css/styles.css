@@ -354,6 +354,7 @@ p {
 
 .subtitle{
   color: var(--light-grey);
+  
 }
 
 .dev-projects-title{
@@ -476,5 +477,24 @@ height:25px;
 }
 
 
+.hi{
+  white-space: nowrap;
+  color: var(--light-grey);
+  font-size: 18px; 
+}
 
+@media only screen and (max-width:515px) {
+  #testsub {
+    display: none;
+  }
+}
 
+@media only screen and (min-width:515px) {
+  #testsub2 {
+    display: none;
+  }
+}
+
+/* .avibio{
+  align-items: center;
+} */
