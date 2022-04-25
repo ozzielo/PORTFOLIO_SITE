@@ -3,7 +3,7 @@
 
 <head>
   <title>Oscar Lomax Portfolio</title>
-  <link rel="shortcut icon" href="http://wikipedia.com/static/favicon/wikipedia.ico">
+  <link rel="shortcut icon" href="img/PORT_FAV.png">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -35,8 +35,18 @@
           <a href="#about" role="menuitem" class="nav-link navigation-list__item">ABOUT</a>
         </li>
 
-        <li role="presentation" class="nav-item">
-          <a href="#projects" role="menuitem" class="nav-link navigation-list__item">WORK</a>
+        <li role="presentation" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="projects" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            WORK
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#development">Web Development</a>
+            <a class="dropdown-item" href="#animations">Animations</a>
+
+            <a class="dropdown-item" href="#graphics">Graphics</a>
+          </div>
+          <!-- <a href="#projects" role="menuitem" class="nav-link navigation-list__item">WORK</a> -->
         </li>
 
         <li role="presentation" class="nav-item">
@@ -45,6 +55,7 @@
       </ul>
 
     </div>
+
 
   </nav>
 
@@ -79,8 +90,8 @@
     </div>
   </div>
   <div class="projects blueline">
-    <div class="dev-projects-title">
-      <h2 class="section" id="projects">Development Projects</h2>
+    <div class="dev-projects-title" id="projects">
+      <h2 class="section" id="development">Development Projects</h2>
     </div>
 
     <div class="alt-dev-projects row">
@@ -289,7 +300,172 @@
 
 
 
+
+
+
   </div>
+
+
+
+  <div class="projects blueline">
+    <div class="dev-projects-title">
+      <h2 class="section" id="animations">Animation Projects</h2>
+    </div>
+
+    <div class="alt-dev-projects-3 row">
+
+      <div class="dev-project column col-md-5 col-lg-5">
+        <div class="dev-description">
+          <video class="dev-img" alt="" controls>
+            <source src="./img/Comp 1.MOV" type="video/mp4">
+          </video>
+          <h3>Spite Podcast Intro</h3>
+          <p class="dev-details">The Spite Podcast, a Maryland based podcast duo, reached out to me to create a short
+            intro animation for their Youtube Channel. After presenting multiple concepts, the client decided to go with
+            a
+            Sprite
+            inspired theme. I proceeding to create the neccessary vector assets in Adobe Illustrator and animated
+            them
+            in Adobe After Effects.</p>
+          <!-- <div class="dev-controls">
+
+            <button style="margin-top: 10px ; background-color: #77e3fe; color: #2e2e2e;">More Details →</button>
+          </div> -->
+
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+      <div class="dev-project column col-md-5 col-lg-5">
+        <div class="dev-description">
+          <img class="dev-img" src="https://static.wixstatic.com/media/b72da7_3776879e510d4be0ae8496c63ef3d029~mv2.gif"
+            alt="">
+          <h3>Gemini</h3>
+          <p class="dev-details">Collaborating with Dame Dash Studios, I assisted in directing and edited
+            this LA based artist's music video that debuted on FOX Soul. The song "Gemini" was inspired by the concept
+            of the
+            battle of human versus ego. It's a lifelong fight between you and yourself.</p>
+          <div class="dev-controls" style="margin-top: 20px ;">
+
+            <a href="./project-gemini.html" style="font-size: 18px;  color: #919191;">More Details
+              →</a>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="projects blueline">
+    <div class="dev-projects-title">
+      <h2 class="section" id="graphics">Graphic Projects</h2>
+    </div>
+
+    <div class="alt-dev-projects-2 row">
+
+      <div class="dev-project column col-md-5 col-lg-5" style="min-height:400px;">
+        <div class="dev-description">
+          <img class="dev-img" src="./img/DELUSIONAL_COVER.png" alt="">
+          <h3>Delusion</h3>
+          <p class="dev-details">Maryland artist, PrincX, contacted me to illustrate the cover for his album
+            "Delusional".
+            He told me he feels sometimes his level of self confidence is delusional, but he would be lost without this
+            belief in himself. This lead us to the concept of him relaxinng on a royal throne. After discussing
+            illustration
+            styles, I proceeded to photograph him and digitally paint his cover in Adobe Photoshop using those
+            photos as reference.
+
+          </p>
+
+          <div class="dev-controls" style="margin-top: 20px ;">
+
+            <a href="./project-delusional.html" style="font-size: 18px;  color: #919191;">More Details
+              →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+      <div class="dev-project column col-md-5 col-lg-5">
+        <div class="dev-description">
+          <img class="dev-img" src="./img/TALKING.PNG" alt="">
+          <h3>Talking Sports</h3>
+          <p class="dev-details">A client reached out wanting a title screen for their Youtube podcast, "Talking
+            Sports".
+            The client recieved a variety of concept sketches and landing on the one you see above. I then, took my
+            sketch
+            into Adobe Illustator, created the neccessary assets and compositing them into the final image.
+          </p>
+
+          <!-- <div class="dev-controls" style="margin-top: 20px ;">
+
+            <a href="./project-delusional.html" style="font-size: 18px;  color: #919191;">More Details
+              →</a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="dev-project column col-md-5 col-lg-5">
+        <div class="dev-description">
+          <img class="dev-img" src="./img/RP_1.png" alt="">
+          <h3>Rap Packs</h3>
+          <p class="dev-details">I was contacted to create a series of hip hop themed trading cards inspired by
+            a series of cyberpunk reference images to be used as NFTs. With a combination
+            of Adobe Illustator and Photoshop, I took these references and designed a reusable card template.
+            Then, tailored the remaining assets to the specific artist on the card. </p>
+
+          <div class="dev-controls" style="margin-top: 20px ;">
+
+            <a href="./project-rp.html" style="font-size: 18px;  color: #919191;">More Details
+              →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+
+      <div class="dev-project column col-md-5 col-lg-5">
+        <div class="dev-description">
+          <img class="dev-img" src="./img/MEAL_VEN.png" alt="">
+          <h3>A MealVenture</h3>
+          <p class="dev-details">A local meal prep business asked me to redesign their current logo.
+            They wanted a logo that emphasized the journey their food can take you on and felt an assortment
+            of utensils forming a road did that. Using the Adobe CC,
+            I designed the appropriate assets and delivered to the client on time.
+          </p>
+
+          <!-- <div class="dev-controls" style="margin-top: 20px ;">
+
+            <a href="./project-delusional.html" style="font-size: 18px;  color: #919191;">More Details
+              →</a>
+          </div> -->
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
 
 
 
@@ -307,7 +483,7 @@
         <a href="https://github.com/ozzielo" class="button contact" target="_blank" rel="noopener">GitHub</a>
       </div>
       <div class="email">
-        <p>ozzylomax@gmail.com</p>
+        <p>oscarlomax114@gmail.com</p>
       </div>
       <p id="copyright">© Oscar Lomax <span id="year"></span>
       </p>
